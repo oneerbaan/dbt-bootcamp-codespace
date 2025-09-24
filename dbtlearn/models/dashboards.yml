@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://e0db6f58.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=WPm1gi7PsqRto3Nc9SEQxURKLCOG9Mkvg6Z_EtJBGpZKWWqaETB5UyukicpZ3nzL
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Anirban Bose
+      email: abose8@myseneca.ca
